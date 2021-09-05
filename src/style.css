@@ -1,0 +1,51 @@
+/* Remove all spaces */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall appearance */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #374c5a, #d7e5f0);
+  color: #ebebeb;
+  font-family: "Lato", sans-serif;
+}
+
+/* Location and weather containers */
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Weather container only */
+.temperature {
+  flex-direction: column;
+}
+
+/* Temperature container */
+.temp-val {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* h2 within temperature container */
+.temp-val h2 {
+  font-size: 40px;
+}
+
+/* span within temperature container */
+.temp-val span {
+  margin: 10px;
+  font-size: 30px;
+}

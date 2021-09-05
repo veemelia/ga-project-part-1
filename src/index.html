@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main style sheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Location-Weather-Meditation</title>
+  </head>
+
+  <body>
+    <div class="location">
+      <h1 id="location">Location</h1>
+      <canvas id="icon" width="128" height="128"></canvas>
+    </div>
+    <div class="temperature">
+      <div class="temp-val">
+        <h2 id="temp-val">30</h2>
+        <span>C</span>
+      </div>
+      <div id="temp-desc">Eggs are frying on the pavement</div>
+    </div>
+
+    <script src="./components/skycons.js"></script>
+    <script src="./components/icon.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

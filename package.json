@@ -1,0 +1,16 @@
+{
+  "name": "ga-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
+}
