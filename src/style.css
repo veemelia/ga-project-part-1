@@ -49,3 +49,7 @@ body {
   margin: 10px;
   font-size: 30px;
 }
+
+#temp-desc {
+  font-size: 25px;
+}
