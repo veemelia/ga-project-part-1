@@ -72,7 +72,7 @@ window.addEventListener("load", () => {
     };
 
     const skycon = new Skycons({ monochrome: false });
-    skycon.set(iconId, iconName[icon]);
     skycon.play();
+    return skycon.set(iconId, iconName[icon]);
   };
 });
