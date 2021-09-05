@@ -3,8 +3,7 @@ window.addEventListener("load", () => {
   let lon;
   let location = document.querySelector("#location");
   let temperatureVal = document.querySelector("#temp-val");
-  let temperatureDesc = document.querySelector(".temp-desc");
-  let iconCanvas = document.querySelector("#icon");
+  let temperatureDesc = document.querySelector("#temp-desc");
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
