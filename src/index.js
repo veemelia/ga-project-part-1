@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   let temperatureVal = document.querySelector("#temp-val");
   let temperatureDesc = document.querySelector("#temp-desc");
   let iconCanvas = document.querySelector("#icon");
-  let tempSection = document.querySelector(".temperature");
+  let tempSection = document.querySelector(".temp-val");
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
