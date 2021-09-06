@@ -49,7 +49,10 @@ window.addEventListener("load", () => {
         .catch(displayErr);
     });
   }
+
+  // Function: Set icon based on weather API code
   const setIcon = (iconId, icon) => {
+    // Corresponding skycon name based on weather API code
     const iconName = {
       "01d": "clear-day",
       "01n": "clear-night",
