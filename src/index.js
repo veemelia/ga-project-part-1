@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
             temperatureVal.innerHTML = ((temp * 9) / 5 + 32).toFixed(2);
           } else {
             document.querySelector(".temp-val span").innerHTML = "C";
-            temperatureVal.innerHTML = temp;
+            temperatureVal.innerHTML = temp.toFixed(2);
           }
         });
       };
