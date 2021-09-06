@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
         const country = data.sys.country;
 
         // Update DOM
-        location.innerHTML = `${city} | ${country}`;
+        location.placeholder = `${city} | ${country}`;
         temperatureVal.innerHTML = temp.toFixed(2);
         temperatureDesc.innerHTML = description;
         setIcon(iconCanvas, icon);
