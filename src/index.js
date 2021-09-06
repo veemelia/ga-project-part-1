@@ -32,8 +32,10 @@ window.addEventListener("load", () => {
         tempSection.addEventListener("click", () => {
           if (document.querySelector(".temp-val span").innerHTML === "C") {
             document.querySelector(".temp-val span").innerHTML = "F";
+            temperatureVal.innerHTML = (temp * 9) / 5 + 32;
           } else {
             document.querySelector(".temp-val span").innerHTML = "C";
+            temperatureVal.innerHTML = ((temp - 32) * 5) / 9;
           }
         });
       };
