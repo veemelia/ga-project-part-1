@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
   let temperatureVal = document.querySelector("#temp-val");
   let temperatureDesc = document.querySelector("#temp-desc");
   let iconCanvas = document.querySelector("#icon");
+  let tempSection = document.querySelector(".temperature");
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -26,6 +27,15 @@ window.addEventListener("load", () => {
         temperatureVal.innerHTML = temp;
         temperatureDesc.innerHTML = description;
         setIcon(iconCanvas, icon);
+
+        // Toggle temperature units
+        tempSection.addEventListener("click", () => {
+          if (document.querySelector(".temp-val span").innerHTML === "C") {
+            document.querySelector(".temp-val span").innerHTML = "F";
+          } else {
+            document.querySelector(".temp-val span").innerHTML = "C";
+          }
+        });
       };
 
       // Function: Catch errors and display in console
