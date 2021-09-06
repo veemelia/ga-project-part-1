@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
 
         // Update DOM
         location.innerHTML = `${city} | ${country}`;
-        temperatureVal.innerHTML = temp;
+        temperatureVal.innerHTML = temp.toFixed(2);
         temperatureDesc.innerHTML = description;
         setIcon(iconCanvas, icon);
 
@@ -32,10 +32,10 @@ window.addEventListener("load", () => {
         tempSection.addEventListener("click", () => {
           if (document.querySelector(".temp-val span").innerHTML === "C") {
             document.querySelector(".temp-val span").innerHTML = "F";
-            temperatureVal.innerHTML = (temp * 9) / 5 + 32;
+            temperatureVal.innerHTML = ((temp * 9) / 5 + 32).toFixed(2);
           } else {
             document.querySelector(".temp-val span").innerHTML = "C";
-            temperatureVal.innerHTML = ((temp - 32) * 5) / 9;
+            temperatureVal.innerHTML = temp;
           }
         });
       };
