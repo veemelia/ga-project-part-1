@@ -17,6 +17,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* Location only style */
 #location {
   cursor: pointer;
 }
@@ -54,6 +55,7 @@ body {
   font-size: 30px;
 }
 
+/* Descriptin size */
 #temp-desc {
   font-size: 25px;
 }

@@ -1,6 +1,8 @@
 window.addEventListener("load", () => {
-  let lat;
-  let lon;
+  let lat; // latitude
+  let lon; // longitude
+
+  // Element selectors
   let location = document.querySelector("#location");
   let temperatureVal = document.querySelector("#temp-val");
   let temperatureDesc = document.querySelector("#temp-desc");
